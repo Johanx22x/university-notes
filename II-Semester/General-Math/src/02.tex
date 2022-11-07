@@ -1,0 +1,460 @@
+\chapter{Logarithmic Function}%
+
+\section{Definition of a logarithmic function}%
+
+\dfn{}{
+    Let $a>0$ and $x\in\mathbb{R}$. The function $f(x)=\log_a(x)$ is called the logarithmic function with base $a$.
+}
+
+Based on the above definition we have:
+
+\begin{enumerate}
+    \item $f(x)=\log_2(x)$ is the logarithmic function with base $2$.
+    \item $f(x)=\log_e(x)$ is the logarithmic function with base $e$.
+\end{enumerate}
+
+\section{Properties}%
+
+\thm{}{
+    The logarithmic function is the inverse function of the exponential function.\\
+    \begin{equation}
+        \begin{aligned}
+            \log_a(x) &= y \Leftrightarrow a^y = x \\
+        \end{aligned}
+    \end{equation}
+}
+
+\ex{}{
+    \begin{equation}
+        \begin{aligned}
+            \log_2(8) &= y \\ 
+                  2^y &= 8 \\
+                  2^y &= 2^3 \\
+                    y &= 3 \\
+                    \\
+            \therefore \log_2(8) = 3
+        \end{aligned}
+    \end{equation}
+}
+
+\section{Domain and Range}%
+
+\thm{}{
+    The domain of the logarithmic function is defined like this: $D_f:\mathbb{R}^+$ \\
+    The range of the logarithmic function is defined like this: $D_f:\mathbb{R}^+$
+}
+
+\section{Solved exercises}%
+
+\qs{}{
+    Simplify the following expression:
+
+    \[
+            \log_3(5)*\log_2(3)*\log_5(6)*\log_2(6) \\
+    \]
+}
+
+\pf{Solution}{
+    \[
+        \begin{aligned}
+            \log_3(5)*\log_2(3)*\log_5(6)*\log_2(6) &= \frac{\log(5)}{\log(3)}*\frac{\log(3)}{\log(2)}*\frac{\log(6)}{\log(5)}*\frac{\log(6)}{\log(2)} \\
+                                                    &= \frac{\log(6)}{\log(2)}*\frac{\log(6)}{\log(2)} \\
+                                                    &= \frac{\log^2(6)}{\log^2(2)} \\
+                                                    &= \left[\frac{\log(6)}{\log(2)}\right]^2 \\
+                                                    &= \left[\log_2(6)\right]^2 \\
+                                                    &= \log_2^2(6) \\
+        \end{aligned}
+    \]
+}
+
+\qs{}{
+    Check the identity
+    \[
+        \ln(x*\sqrt[3]{2x+1}*\sqrt[5]{(3x+1)^2}) &= \ln(x)+\frac{1}{3}\ln(2x+1)+\frac{2}{5}\ln(3x+1) \\
+    \]
+}
+
+\pf{Solution}{
+    \[
+        \begin{aligned}
+            \ln(x*\sqrt[3]{2x+1}*\sqrt[5]{(3x+1)^2}) &= \ln(x)+\ln(\sqrt[3]{2x+1})+\ln(\sqrt[5]{(3x+1)^2}) \\
+                                                     &= \ln(x)+ln((2x+1)^{\frac{1}{3}})+ln((3x+1)^{\frac{2}{5}}) \\
+                                                     &= \ln(x)+\frac{1}{3}\ln(2x+1)+\frac{2}{5}\ln(3x+1) \\
+        \end{aligned}
+    \]
+}
+
+\qs{}{
+    Check the identity
+    \[
+        \frac{1}{4}\log(x^2+4x+3)+\frac{1}{4}\log\left(\frac{x+1}{x+3}\right) &= \log\sqrt{x+1} \\
+    \]
+}
+
+\pf{Solution}{
+    \[
+        \begin{aligned}
+            \frac{1}{4}\log(x^2+4x+3)+\frac{1}{4}\log\left(\frac{x+1}{x+3}\right) &= \frac{1}{4}\log\left[(x+1)(x+3)\right]+ \frac{1}{4}\log\left(\frac{x+1}{x+3}\right) \\
+                                                                                  &= \frac{1}{4}\log\left[(x+1)(x+3)\right]+ \frac{1}{4}\left[\log(x+1) - \log(x+3)\right] \\
+                                                                                  &= \frac{1}{4}\log(x+1)+\frac{1}{4}\log(x+3)+\frac{1}{4}\log(x+1)-\frac{1}{4}\log(x+3) \\
+                                                                                  &= \frac{1}{4}\log(x+1)+\frac{1}{4}\log(x+1) \\
+                                                                                  &= \frac{1}{2}\log(x+1) \\
+                                                                                  &= \log\sqrt{x+1} \\
+        \end{aligned}
+    \]
+}
+
+\qs{}{
+    Check the identity
+    \[
+        \log\left(\frac{x\sqrt{x+1}}{x^2-1}\right) &= \log(x)-\frac{1}{2}\log(x+1)-\log(x-1) \\
+    \]
+}
+
+\pf{Solution}{
+    \[
+        \begin{aligned}
+            \log\left(\frac{x\sqrt{x+1}}{x^2-1}\right) &= \log\left(\frac{x\sqrt{x+1}}{(x+1)(x-1)}\right) \\
+                                                       &= \log(x\sqrt{x+1})-\log((x+1)(x-1)) \\
+                                                       &= \log(x\sqrt{x+1})-\log(x+1)-\log(x-1) \\
+                                                       &= \log(x)+\log((x+1)^\frac{1}{2})-\log(x+1)-\log(x-1) \\
+                                                       &= \log(x)+\frac{1}{2}\log(x+1)-\log(x+1)-\log(x-1) \\
+                                                       &= \log(x)-\frac{1}{2}\log(x+1)-\log(x-1) \\
+        \end{aligned}
+    \]
+}
+
+\qs{}{
+    Solve in $\mathbb{R}$ the following equation applying power laws:
+    \[
+        2^x\left(\frac{2^{2x}}{4^{-3+x}}\right)^{x+1} &= \sqrt{4^{6-x}} \\       
+    \]
+}
+
+\pf{Solution}{
+    \[
+    \begin{aligned}
+        2^x\left(\frac{2^{2x}}{4^{-3+x}}\right)^{x+1} &= \sqrt{4^{6-x}} \\       
+        2^x\left(\frac{2^{2x}}{(2^{2})^{-3+x}}\right)^{x+1} &= \sqrt{(2^{2})^{6-x}} \\       
+        2^x\left(\frac{2^{2x}}{2^{-6+2x}}\right)^{x+1} &= \sqrt{2^{12-2x}} \\       
+        2^x(2^{2x-(-6+2x)})^{x+1} &= 2^{\frac{12-2x}{2}} \\       
+        2^x(2^6)^{x+1} &= 2^{6-x} \\
+        2^x(2^{6x+6}) &= 2^{6-x} \\
+        2^{x+6x+6} &= 2^{6-x} \\
+        x+6x+6 &= 6-x \\
+        7x &= -x \\
+        8x &= 0 \\
+        x &= 0 \\
+    \end{aligned}
+    \]
+}
+
+\qs{}{
+    Solve in $\mathbb{R}$ the following equation applying power laws:
+    \[
+        2^{2x}-6*2^x+8 &= 0 \\
+    \]
+}
+
+\pf{Solution}{
+    With $u=2^x$ we have
+
+    \[
+        \begin{aligned}
+            (2^x)^2-6*2^x+8 &= 0 \\
+            u^2-6u+8 &= 0 \\
+            (u-2)(u-4) &= 0 \\
+        \end{aligned}
+    \]
+
+    For $u=2$:
+    \[
+        \begin{aligned}
+            2^x &= 2 \\
+            x &= 1 \\
+        \end{aligned}
+    \]
+
+    For $u=4$:
+    \[
+        \begin{aligned}
+            2^x &= 4 \\
+            2^x &= 2^2 \\
+            x &= 2 \\
+        \end{aligned}
+    \]
+
+    Therefore, for $u=2$ we have $x=1$ and for $u=4$ we have $x=2$.
+}
+
+\qs{}{
+    Solve in $\mathbb{R}$ the following equation:
+    \[
+        e^{5x-2}-7^{1-x} &= 0 \\
+    \]
+}
+
+\pf{Solution}{
+    \[
+        \begin{aligned}
+            e^{5x-2} &= 7^{1-x} \\
+            \ln(e^{5x-2}) &= \ln(7^{1-x}) \\
+            5x-2 * \ln(e) &= (1-x)\ln(7) \\
+            5x-2 &= (1-x)\ln(7) \\
+            5x-2 &= \ln(7)-x\ln(7) \\ 
+            5x+x\ln(7) &= \ln(7)+2 \\
+            x(5+\ln(7)) &= \ln(7)+2 \\
+            x &= \frac{\ln(7)+2}{5+\ln(7)} \\
+        \end{aligned}
+    \]
+
+    \therefore x=\frac{\ln(7)+2}{5+\ln(7)}
+}
+
+\qs{}{
+    Solve in $\mathbb{R}$ the following equation:
+    \[
+        3*2^{2x}-29*2^x &= -40 \\
+    \]
+}
+
+\pf{Solution}{
+    With $u=2^x$ we have:
+
+    \[
+        \begin{aligned}
+            3*2^{2x}-29*2^x &= -40 \\
+            3u^2-29u &= -40 \\
+            3u^2-29u+40 &= 0 \\
+            (3u-5)(u-8) &= 0 \\
+        \end{aligned}
+    \]
+
+    For $3u=5$:
+    \[
+        \begin{aligned}
+            3u &= 5 \\
+            u &= \frac{5}{3} \\
+            2^x &= \frac{5}{3} \\
+            \log_2(2^x) &= \log_2(\frac{5}{3}) \\
+            x &= \log_2(\frac{5}{3}) \\
+        \end{aligned}
+    \]
+
+    For $u=8$:
+        \[
+        \begin{aligned}
+            u &= 8 \\
+            2^x &= 8 \\
+            2^x &= 2^3 \\
+            x &= 3 \\
+        \]
+}
+
+\qs{}{
+    Solve in $\mathbb{R}$ the following equation:
+    \[
+        \ln(x\sqrt[3]{4-2x}) &= \ln(x)+\frac{1}{3}\ln(4-2x) \\
+    \]
+}
+
+\pf{Solution}{
+    \[
+        \begin{aligned}
+            \ln(x\sqrt[3]{4-2x}) &= \ln(x)+\frac{1}{3}\ln(4-2x) \\
+            \ln(x)+\ln(\sqrt[3]{4-2x}) &= \ln(x)+\frac{1}{3}\ln(4-2x) \\
+            \ln(x)+\frac{1}{3}\ln(4-2x) &= \ln(x)+\frac{1}{3}\ln(4-2x) \\
+            \ln(x)+\frac{1}{3}\ln(4-2x)-\ln(x)-\frac{1}{3}\ln(4-2x) &= 0 \\
+            0 &= 0 \\
+        \end{aligned}
+    \]
+
+    Domain of $\ln(x)$ is $\mathbb{R}^+$, so $x\in\mathbb{R}^+$. \\
+    
+    Domain of $\sqrt[3]{4-2x}$ is $\mathbb{R}^+$, so for $4-2x>0$ we have $x\in\mathbb{R}^+$.
+
+    \[
+        \begin{aligned}
+            4-2x &> 0 \\
+            -2x &> -4 \\
+            x &< 2 \\
+        \end{aligned}
+    \]
+
+    Therefore, $x\in\mathbb{R}^+$ and $x<2$, so $D_f: ]0,2[$.
+}
+
+\qs{}{
+    Solve in $\mathbb{R}$ the following equation:
+    \[
+        \log_3(x+7)+\log_3(x+1) = 1 + \log_3(11-x) \\
+    \]
+}
+
+\pf{Solution}{
+    First, we need the domains of the function:
+
+    For $\log_3(x+7)$:
+    \[
+        \begin{aligned}
+            \log_3(x+7) &> 0 \\
+            x+7 &> 0 \\
+            x &> -7 \\
+        \end{aligned}
+    \]
+
+    For $\log_3(x+1)$:
+    \[
+        \begin{aligned}
+            \log_3(x+1) &> 0 \\
+            x+1 &> 0 \\
+            x &> -1 \\
+        \end{aligned}
+    \]
+
+    For $\log_3(11-x)$:
+    \[
+        \begin{aligned}
+            \log_3(11-x) &> 0 \\
+            11-x &> 0 \\
+            x &< 11 \\
+        \end{aligned}
+    \]
+
+    So, $D_f: ]-1,11[$.
+
+    \[
+        \begin{aligned}
+            \log_3(x+7)+\log_3(x+1) &= 1 + \log_3(11-x) \\
+            \log_3((x+7)(x+1))-\log_3(11-x) &= 1 \\
+            \log_3\left(\frac{(x+7)(x+1)}{11-x}\right) &= 1 \\
+            3^1 &= \frac{(x+7)(x+1)}{11-x} \\
+            3(11-x) &= (x+7)(x+1) \\
+            33-3x &= x^2+7x+x+7 \\
+            33-3x &= x^2+8x+7 \\
+            0 &= x^2+8x+7+3x-33 \\
+            0 &= x^2+11x-26 \\
+            0 &= (x-2)(x+13) \\
+        \end{aligned}
+    \]
+
+    Now we have $x=2$ and $x=-13$, but $2\in]-1,11[$ and $-13\notin]-1,11[$, so $x=2$ is the only solution.
+}
+
+\qs{}{
+    Solve in $\mathbb{R}$ the following equation:
+    \[
+        \log_2(5y-6)-\log_2(5y+1) &= 3 \\
+    \]
+}
+
+\pf{Solution}{
+    First we need the domains of the function: \\
+
+    For $\log_2(5y-6)$:
+
+    \[
+        \begin{aligned}
+            \log_2(5y-6) &> 0 \\
+            5y-6 &> 0 \\
+            y &> \frac{6}{5} \\
+        \end{aligned}
+    \]
+
+    For $\log_2(5y+1)$:
+
+    \[
+        \begin{aligned}
+            \log_2(5y+1) &> 0 \\
+            5y+1 &> 0 \\
+            y &> -\frac{1}{5} \\
+        \end{aligned}
+    \]
+
+    So, $D_f: ]\frac{6}{5},\infty[$. Now, we can solve the equation:
+
+    \[
+        \begin{aligned}
+            \log_2(5y-6)-\log_2(5y+1) &= 3 \\
+            \log_2\left(\frac{5y-6}{5y+1}\right) &= 3 \\
+            2^3 &= \frac{5y-6}{5y+1} \\
+            8(5y+1) &= 5y-6 \\
+            40y+8 &= 5y-6 \\
+            35y &= -14 \\
+            y &= -\frac{14}{35} \\
+            y &\approx -0.4 \\
+        \end{aligned}
+    \]
+
+    But $-0.4\notin]\frac{6}{5},\infty[$, so there is no solution. 
+
+    \therefore $S=\emptyset$
+}
+
+\qs{}{
+    Solve in $\mathbb{R}$ the following equation:
+    \[
+        \log_2(x)+4+\log_2(x+1) = \log_2(x+2)+5 \\
+    \]
+}
+
+\pf{Solution}{
+
+    First we need the domains of the function: \\
+
+    For $\log_2(x)$:
+    \[
+        \begin{aligned}
+            \log_2(x) &> 0 \\
+            x &> 0 \\
+        \end{aligned}
+    \]
+
+    For $\log_2(x+1)$:
+
+    \[
+        \begin{aligned}
+            \log_2(x+1) &> 0 \\
+            x+1 &> 0 \\
+            x &> -1 \\
+        \end{aligned}
+    \]
+
+    For $\log_2(x+2)$:
+
+    \[
+        \begin{aligned}
+            \log_2(x+2) &> 0 \\
+            x+2 &> 0 \\
+            x &> -2 \\
+        \end{aligned}
+    \]
+
+    So, $D_f: ]0,\infty[$. Now, we can solve the equation:
+
+    \[
+        \begin{aligned}
+            \log_2(x)+4+\log_2(x+1) &= \log_2(x+2)+5 \\
+            \log_2(x)+\log_2(x+1)-\log_2(x+2) &= 1 \\
+            \log_2\left(\frac{x(x+1)}{x+2}\right) &= 1 \\
+            2^1 &= \frac{x(x+1)}{x+2} \\
+            2(x+2) &= x(x+1) \\
+            2x+4 &= x^2+x \\
+            2x &= x^2+x-4 \\
+            0 &= x^2-x-4 \\
+        \end{aligned}
+    \]
+
+    We need to solve the quadratic equation $x^2-x-4=0$.
+
+    \[
+        \begin{aligned}
+            x^2-x-4 &= 0 \\
+            (x-\frac{1+\sqrt{17}}{2})(x-\frac{1-\sqrt{17}}{2}) &= 0 \\
+        \end{aligned}
+    \]
+
+    Now we have $x=\frac{1+\sqrt{17}}{2}$ and $x=\frac{1-\sqrt{17}}{2}$, but $\frac{1-\sqrt{17}}{2}\notin]0,\infty[$, so $\frac{1+\sqrt{17}}{2}$ is the only solution. \\
+
+    \therefore $S=\left\{\frac{1+\sqrt{17}}{2}\right\}$
+}

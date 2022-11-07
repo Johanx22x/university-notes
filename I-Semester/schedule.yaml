@@ -1,0 +1,15 @@
+monday:
+  assistance: '7:55 - 11:30'
+tuesday:
+  intro: '7:55 - 11:30'
+  eng: '13:25 - 16:05'
+wednesday:
+  md: '7:55 - 9:40'
+  me: '9:45 - 11:30'
+  foc: '12:30 - 16:05'
+thursday:
+  taller: '7:55 - 11:30'
+  ce: '16:10 - 19:55'
+friday:
+  md: '7:55 - 9:40'
+  me: '9:45 - 11:30'
