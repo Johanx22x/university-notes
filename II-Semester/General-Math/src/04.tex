@@ -1,0 +1,266 @@
+\chapter{Triangulos rectangulos}
+
+\section{Angulos}
+
+% \qs{Problema #1} {
+%     Un pino proyecta una sombra de 532 pies de largo.
+%     Encuentre la altura del arbol si el angulo de elevacion
+% }
+
+\qs{Problema 2} {
+    Desde un punto sobre el suelo a 500 pies de la base de un edificio,
+    un observador encuentra que el angulo de elevacion hasta la parte 
+    superior del edificio es $24^\circ$ y que el angulo de elevacion a la parte 
+    superior de un aste de bandera sobre el edificio es $27^\circ$. Determine la 
+    altura del edificio y la longitud del asta.
+}
+
+\pf{Solucion} {
+    Altura del edificio:
+
+    \[
+        \begin{aligned}
+            \tan(24) &= \frac{h}{500} \\
+            500\tan(24) &= h \\
+            h &\approx 222,61
+        \end{aligned}
+    \]
+
+    Longitud del asta:
+
+    \[
+        \begin{aligned}
+            \tan(27) &= \frac{k}{500} \\
+            500\tan(27) &= k \\
+            k &\approx 254,76 \\
+            \\
+            x &= k-h \\ 
+            x &= 254,76 - 222,61 \\
+            x &\approx 32,15
+        \end{aligned}
+    \]
+
+    $\therefore$ la medida del asta es de $32,15$ pies.
+}
+
+\qs{Problema 3} {
+    Una escalera de $40^\circ$ pies esta apoyada en un edificio. Si la base 
+    de la escalera esta separada $6^\circ$ pies de la base del edificio, cual
+    es el angulo que forman la escalera y el edificio?
+}
+
+\pf{Solucion} {
+    \[
+        \begin{aligned}
+            \sin(\theta) &= \frac{6}{40} \\
+            \arcsin(\sin(\theta)) &= \arcsin(\frac{6}{40}) \\
+            \theta &= \arcsin(\frac{6}{40}) \\
+            \theta &= 
+        \end{aligned}
+    \]
+}
+
+\qs{Problema 4} {
+    Una mujer parada sobre una colina ve un asta de bandera que sabe 
+    que tiene $60$ pies de altura. El angulo de depresion respecto de 
+    la parte inferior del asta es de $14^\circ$ y el angulo de elevacion 
+    repecto de la parte superior del asta es de $18^\circ$. Encuentre la 
+    distancia x desde el asta.
+}
+
+\pf{Solucion} {
+    \[
+        \begin{aligned}
+            \tan(14) &= \frac{y}{x} \\
+            \tan(18) &= \frac{60-y}{x} \\
+            \\
+            y &= \tan(14)x \\
+            \\
+            \tan(18) &= \frac{60-\tan(14)x}{x} \\
+            x\tan(18) &= 60-\tan(14)x \\
+            x\tan(18) + \tan(14)x &= 60 \\
+            x &= \frac{60}{\tan(18) + \tan(14)} \\
+            x &\approx 104,48 \\
+        \end{aligned}
+    \]
+}
+
+\section{Leyes de los senos y cosenos}
+
+\thm{Ley de senos} {
+    Considere el $\triangle ABC$ un triangulo cualquiera y considere 
+    $a = \overline{BC}$, $b = \overline{AC}$ y $c = \overline{AB}$,
+    $a = m\measuredangle BAC$, $b = m\measuredangle ABC$ y $\theta = m\measuredangle ACB$ tal como se 
+    muestra en la siguiente figura.
+
+    $\\[1em]$
+    $\therefore \frac{\sin(\alpha)}{a} = \frac{\sin(\beta)}{b} = \frac{\sin(\theta}{c}$
+}
+
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=0.5\textwidth]{img/04/01.png}
+%     \caption{Ley de senos}
+%     \label{fig:04:01}
+% \end{figure}
+
+\qs{Problema 1} {
+    Los puntos $A$ y $B$ estan separados por un lago. Para hallar la distancia 
+    entre ellos el topografo localiza un punto $C$ sobre el suelo, tal que 
+    $m\measuredangle CAB = 48,6^\circ$. Ademas, toma la mediada de $\overline{AC}$
+    en metros, donde $\overline{AC} = 312m$ y $\overline{CB} = 527m$. Encuentre 
+    la distancia de $A$ a $B$.
+}
+
+\pf{Solucion} {
+    \[
+        \begin{aligned}
+            \frac{\sin(\theta)}{x} &= \frac{\sin(48,6)}{527} = \frac{\sin{\beta}}{312} \\
+            \frac{\sin(\theta)}{x} &= \frac{\sin(48,6)}{527} \\
+            \\
+            \frac{\sin(48,6)}{527} &= \frac{\sin{\beta}}{312} \\
+            312\frac{\sin(48,6)}{527} &= \sin{\beta} \\
+            \arcsin(312\frac{\sin(48,6)}{527}) &= \beta \\
+            \beta &= 26,36^\circ \\
+            \\
+            \theta &= 180 - 48,6 - 26,36 \\
+            \theta &= 105,04^\circ \\
+            \\
+            \frac{x}{\sin(105,04)} &= \frac{527}{\sin(48,6)} \\
+            x &= 527\frac{\sin(105,04)}{\sin(48,6)} \\
+            x &\approx 679,49 \\
+        \end{aligned}
+    \]
+}
+
+\qs{Problema 2} {
+    Una torre de $125$m de altura se encuentra sobre una base de concreto en la 
+    orilla de un rio, como se muestra en la figura. Desde lo alto de la torre, el 
+    angulo de depresion a un punto en la orilla opuesta es de $42^\circ$ y desde la 
+    base de la torre el angulo de depresion al mismo punto es de $13,3^\circ$. 
+    Hallar la medida del ancho del rio y la medida de la base donde descansa la torre.
+}
+
+\pf{Solucion} {
+    \[
+        \begin{aligned}
+            \tan(42) &= \frac{125+y}{x} \\
+            \\
+            \tan(13,3) &= \frac{y}{x} \\
+            \\
+            y &= \tan(13,3)x \\
+            \\
+            \tan(42) &= \frac{125+\tan(13,3)x}{x} \\
+            x\tan(42) &= 125+\tan(13,3)x \\
+            x\tan(42) - \tan(13,3)x &= 125 \\
+            x &= \frac{125}{\tan(42) - \tan(13,3)} \\
+            x &\approx 188,24 \\
+            \\
+            y &= \tan(13,3)188,24 \\
+            y &\approx 44,49 \\
+        \end{aligned}
+    \]
+}
+
+\qs{Problema 3} {
+    Un barco zarpo de un muelle y navego $150 km$ en direccion $N 30^\circ22'0''O$
+    para reunirse con otra enbarcacion. Luego de la reunion, el barco viro con rumbo
+    $S 20^\circ45'30''O$ y navego toda la noche. En un determinado instante, el encargado
+    del cuarto de maquinas dio el aviso al capitan sobre un problema que los dejaria a la 
+    deriva en aproximadamente $220 km$ por lo que deberan regresar a puerto de inmediato.
+    El navegante determino que el rumbo a seguir es $E 28^\circ15'0''N$ para llegar al mismo 
+    muelle donde habia partido. A que distancia esta el barco del muelle?, Que distancia 
+    recorrio el barco desde la reunion hasta la deteccion del problema?, Lograran llegar 
+    antes de quedar a la deriva?
+}
+
+\pf{Solucion} {
+}
+
+\section{Ley de cosenos}
+
+\qs{Problema 1} {
+    
+}
+
+\pf{Solucion} {
+    Aplicando la ley de cosenos tenemos que:
+
+    \[
+        \begin{aligned}
+            x^2 &= 543^2 + 425^2 - 2\cdot 543\cdot 425\cdot \cos(72.5^\circ) \\
+            x^2 &= 294849 + 180625 - 461550 \cdot \cos(72.5^\circ) \\
+            x^2 &= 475474 - 138790.7618 \\
+            x^2 &= 336683.2382 \\
+            x &= \sqrt{336683.2382} \\
+            x &= 580.24 \\
+        \end{aligned}
+    \]
+}
+
+\qs{Problema 2} {
+    Desde el borde de un acantilado de $60m$ de altura una persona observa un barco
+    con un angulo de depresion de $17^\circ$, en el mismo instante observa un 
+    helicoptero que vuela $145m$ de altura sobre el nivel del mar con un angulo de 
+    elevacion de $26^\circ$. Si se sabe que el observador, el barco y el helicoptero 
+    se encuentran en el mismo plano vertical, determine la distancia entre el barco 
+    y el helicoptero en dicho instante.
+}
+
+\pf{Solucion} {
+    \[
+        \begin{aligned}
+            \sen(17) &= \frac{60}{x} \\
+            x &= \frac{60}{\sen(17)} \\
+            x &= 205,22 \\
+            \\
+            \sen(26) &= \frac{85}{y} \\
+            y &= \frac{85}{\sen(26)} \\
+            y &= 193,90 \\
+            \\
+            x^2 &= (193,90)^2 + (205,22)^2 - 2\cdot 193,90\cdot 205,22\cdot \cos(43) \\
+            x^2 &= 21508,1743 \\
+            x &= \sqrt{21508,1743} \\
+            x &= 146,65
+        \end{aligned}
+    \]
+
+    $\therefore$ La distancia entre el barco y el helicoptero es de $146,65m$ 
+    aproximadamente.
+}
+
+\qs{Problema 3} {
+    Una camara de vigilancia instalada en la parte superior de un poste vertical de $8m$
+    de alto ubicado sobre un parque plano, enfoca un punto $\mathbf{A}$ sobre el suelo 
+    con un angulo de depresion de $61^\circ$. Si se sabe que el angulo entre las lineas 
+    de vision qde la camara en el punto $\mathbf{A}$ y el punto $\mathbf{B}$ es de 
+    $43^\circ$, determine la distancia entre $\mathbf{A}$ y $\mathbf{B}$.
+}
+
+\pf{Solucion} {
+    \[
+        \begin{aligned}
+            \sen(61) &= \frac{8}{x} \\
+            x &= \frac{8}{\sen(61)} \\
+            x &= 9,14 \\
+            \\
+            \sen(48) &= \frac{8}{y} \\
+            y &= \frac{8}{\sen(48)} \\
+            y &= 10,76 \\
+            \\
+            AB^2 &= (9,14)^2 + (10,76)^2 - 2\cdot 9,14\cdot 10,76\cdot \cos(43) \\
+            AB &= 7,44 \\
+        \end{aligned}
+    \]
+
+    $\therefore$ La distancia entre $\mathbf{A}$ y $\mathbf{B}$ es de $7,44m$
+    aproximadamente.
+}
+
+\qs{Problema 4} {
+    La ciudad A esta ubicada directamente al sur de la ciudad B, pero no hay vuelos de 
+    la ciudad A a la ciudad B. Los aviones primero vuelan $143km$ de la ciudad A a una 
+    ciudad C, la cual esta $51^\circ$ al norte, $51^\circ$ este de A y de ahi vuela 
+    $212km$ hasta la ciudad B. Determine la distancia (en linea recta) entre las ciudades
+    A y B.
+}

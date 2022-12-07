@@ -14,4 +14,8 @@
 \contentsline {section}{\numberline {3.1}Introduction}{12}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Pythagorean Theorem}{12}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Fundamental Identities}{12}{subsection.3.1.2}%
+\contentsline {chapter}{\numberline {4}Triangulos rectangulos}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Angulos}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Leyes de los senos y cosenos}{14}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Ley de cosenos}{16}{section.4.3}%
 \contentsfinish 
