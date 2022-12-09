@@ -1,14 +1,17 @@
 \documentclass[a4paper]{report}
 
+% Language settings
+\usepackage[spanish]{babel}
+
 % Packages
 \input{./lib/preamble.tex}
 \input{./lib/macros.tex}
 \input{./lib/letterfonts.tex}
 
 % Front page
-\title{\Huge{Calculus I}}
+\title{\Huge{Cálculo Diferencial e Integral}}
 \author{\Huge{Johan Rodriguez}}
-\date{\today}
+\date{Verano 2022-2023}
 
 % Document
 \begin{document}
@@ -16,6 +19,9 @@
     \tableofcontents
 
     % Here insert your content
-    \input{./src/chap01.tex}
+    % \input{./src/00-logica-proposicional.tex}
+    \input{./src/01-limites.tex}
+    % \input{./src/02-derivadas.tex}
+    % \input{./src/03-integrales.tex}
 
 \end{document}
