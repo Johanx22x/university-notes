@@ -1,8 +1,10 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\numberline {1}Límites}{2}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Concepto de límite}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.1}Definición intuitiva}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Límites laterales}{2}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Definición formal}{3}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Cálculo de límites}{4}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Límites por sustitución}{4}{subsection.1.4.1}%
+\contentsline {section}{\numberline {1.4}Propiedades}{4}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Cálculo de límites}{5}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Límites por sustitución directa}{5}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Forma indeterminada $\frac {0}{0}$}{6}{subsection.1.5.2}%
 \contentsfinish 
